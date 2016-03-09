@@ -7,6 +7,7 @@ $(document).ready(function () {
         this.play();
     });
 
+
     window.requestAnimFrame = (function () {
         return window.requestAnimationFrame ||
             window.webkitRequestAnimationFrame ||
