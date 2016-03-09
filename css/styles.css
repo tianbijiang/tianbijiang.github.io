@@ -389,6 +389,17 @@ section .section-title {
 
 #portfolio {
     color: #fff;
+    /*background: -webkit-linear-gradient(#f8f3c9, #f1cfaa, #cdcec9, #89acc2); !* For Safari 5.1 to 6.0 *!*/
+    /*background: -o-linear-gradient(#f8f3c9, #f1cfaa, #cdcec9, #89acc2); !* For Opera 11.1 to 12.0 *!*/
+    /*background: -moz-linear-gradient(#f8f3c9, #f1cfaa, #cdcec9, #89acc2); !* For Firefox 3.6 to 15 *!*/
+    /*background: linear-gradient(#f8f3c9, #f1cfaa, #cdcec9, #89acc2); !* Standard syntax *!*/
+    background-image: linear-gradient(to bottom, rgba(81, 87, 113, 0.8), rgba(81, 87, 113, 0.8)), url(../img/sky1.jpg);
+    background-image: -moz-linear-gradient(top, rgba(81, 87, 113, 0.8), rgba(81, 87, 113, 0.8)), url(../img/sky1.jpg);
+    background-image: -o-linear-gradient(top, rgba(81, 87, 113, 0.8), rgba(81, 87, 113, 0.8)), url(../img/sky1.jpg);
+    background-image: -ms-linear-gradient(top, rgba(81, 87, 113, 0.8), rgba(81, 87, 113, 0.8)), url(../img/sky1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 87, 113, 0.8)), to(rgba(81, 87, 113, 0.8))), url(../img/sky1.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(81, 87, 113, 0.8), rgba(81, 87, 113, 0.8)), url(../img/sky1.jpg);
+    background-attachment: fixed;
 }
 
 #video {
