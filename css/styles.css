@@ -794,6 +794,10 @@ section .section-title {
     line-height: 45px;
 }
 
+.social-btn-lg:hover{
+    color: #fff;
+}
+
 .social-btn-lg-wrapper {
     position: relative;
     width: 29px;
