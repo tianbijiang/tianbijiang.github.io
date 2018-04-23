@@ -12,7 +12,7 @@
 <script>
     console.log('iframe loaded');
     document.getElementById('btn').addEventListener('click', function() {
-      window.parent.postMessage('Hi container', '*');
+      window.parent.postMessage({attr: 'Hi Container'}, '*');
     });
 </script>
 </body>
