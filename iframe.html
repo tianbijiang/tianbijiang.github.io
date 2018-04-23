@@ -4,11 +4,9 @@
 	<meta charset="utf-8">
 	<title>postMessage Demo: Sender</title>
   <script>
-    (function() {
-	    document.getElementById('btn').addEventListener('click', function() {
-	      window.parent.postMessage('Hi container', '*');
-	    });
-    })();
+    document.getElementById('btn').addEventListener('click', function() {
+      window.parent.postMessage('Hi container', '*');
+    });
   </script>
 </head>
 <body>
