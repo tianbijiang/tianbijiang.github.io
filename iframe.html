@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>postMessage Demo: Sender</title>
-  <script>
-    console.log('iframe loaded');
-    document.getElementById('btn').addEventListener('click', function() {
-      window.parent.postMessage('Hi container', '*');
-    });
-  </script>
 </head>
 <body>
 	<p>
 		This document is on the domain: http://tianbijiang.github.com
 	</p>
 	<button id="btn">Send message to parent container</button>
+<script>
+    console.log('iframe loaded');
+    document.getElementById('btn').addEventListener('click', function() {
+      window.parent.postMessage('Hi container', '*');
+    });
+</script>
 </body>
 </html>
