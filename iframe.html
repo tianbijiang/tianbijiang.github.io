@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>postMessage Demo: Sender</title>
   <script>
+    console.log('iframe loaded');
     document.getElementById('btn').addEventListener('click', function() {
       window.parent.postMessage('Hi container', '*');
     });
