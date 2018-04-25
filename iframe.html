@@ -12,7 +12,11 @@
 <script>
     console.log('iframe loaded');
     document.getElementById('btn').addEventListener('click', function() {
-      window.parent.postMessage({attr: 'Hi Container'}, '*');
+      let body = document.body,
+          html = document.documentElement,
+          height = Math.max(body.scrollHeight, body.offsetHeight,
+                          html.clientHeight, html.scrollHeight, html.offsetHeight);
+      window.parent.postMessage({height: height+'px', h: document.height()}, '*');
     });
 </script>
 </body>
